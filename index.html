@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Ray Tracer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="renderCanvas"></canvas>
+        <div id="controls">
+            <div id="gui-container"></div>
+            <div id="stats">
+                <div class="stat"><span>Render Time:</span> <span id="renderTime">0</span>ms</div>
+                <div class="stat"><span>FPS:</span> <span id="fps">0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="rayTracer.js"></script>
+    <script src="scene.js"></script>
+    <script src="materials.js"></script>
+    <script src="camera.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
